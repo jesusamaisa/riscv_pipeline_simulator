@@ -30,20 +30,3 @@ Bu proje, bilgisayar organizasyonu dersi kapsamında geliştirilen bir sistemdir
 ```bash
 git clone https://github.com/jesusamaisa/riscv_pipeline_simulator.git
 cd riscv_pipeline_simulator
-
----
-## 📈 Kullanılan Teknolojiler
-
-🖥️ Python 3.x
-
-🛠️ Flask
-
-🧠 OpenCV
-
-📊 Matplotlib
-
-📚 RISC-V Komut Seti (RV32I)
-
-🌐 HTML/CSS/JS
-
----
