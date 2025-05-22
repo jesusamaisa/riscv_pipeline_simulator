@@ -1,0 +1,10 @@
+
+eyes = eye_cascade.detectMultiScale(roi_gray, 1.1, 10)
+for i, (ex, ey, ew, eh) in enumerate(eyes):
+    if eye_count < max_photos:
+        eye_img = roi_color[ey:ey + eh, ex:ex + ew]
+        eye_path = f"{output_dir}/eye_{eye_count}.jpg"
+        cv2.imwrite(eye_path, eye_img)
+        eye_count += 1
+        break
+

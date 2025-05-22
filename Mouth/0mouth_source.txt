@@ -1,0 +1,9 @@
+
+mouths = mouth_cascade.detectMultiScale(roi_gray, 1.5, 11)
+for (mx, my, mw, mh) in mouths:
+    if my > h / 2 and mouth_count < max_photos:
+        mouth_img = roi_color[my:my + mh, mx:mx + mw]
+        mouth_path = f"{output_dir}/mouth_{mouth_count}.jpg"
+        cv2.imwrite(mouth_path, mouth_img)
+        mouth_count += 1
+        break
